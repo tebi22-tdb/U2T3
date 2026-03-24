@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Recursos digitales educativos</title>
+
+<!-- ICONOS (IMPORTANTE) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ===== RESET ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid black;
+    flex-wrap: wrap;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logos img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-bottom: 2px solid black;
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    object-fit: cover;
+}
+
+/* ===== DESCRIPCION ===== */
+.descripcion {
+    padding: 20px;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+/* ===== GRID RECURSOS ===== */
+.recursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.recurso {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.recurso img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    object-fit: cover;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    margin: 0 15px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0077ff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 20px;
+    }
+
+    .recursos {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logos">
+        <img src="https://plataforma.voaxaca.tecnm.mx/pluginfile.php/1/core_admin/logocompact/300x300/1754357054/ITVO.png" alt="ITVO">
+        <img src="https://via.placeholder.com/100x50?text=Informatica" alt="Informática">
+    </div>
+
+    <nav class="menu">
+        <div>Quienes somos</div>
+        <div>Contacto</div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Recursos digitales educativos</h1>
+    <img src="https://scalalearning.com/wp-content/uploads/2022/09/recurso-educativo-digital-ejemplos.png" alt="educacion">
+</section>
+
+<!-- DESCRIPCION -->
+<section class="descripcion">
+    Los recursos digitales educativos son herramientas tecnológicas que facilitan el aprendizaje mediante el uso de contenido interactivo, multimedia y plataformas en línea. Permiten mejorar la comprensión, el acceso a la información y la participación de los estudiantes.
+</section>
+
+<!-- RECURSOS -->
+<section class="recursos">
+
+    <div class="recurso">
+        <img src="https://yosoytuprofe.20minutos.es/wp-content/uploads/2021/09/plataformas-educativas.png">
+        <p><b>Plataformas educativas:</b> Son sistemas en línea donde los estudiantes pueden acceder a cursos, tareas y materiales. Estas plataformas permiten la interacción entre docentes y alumnos, el seguimiento del progreso académico y el acceso a contenido desde cualquier lugar con conexión a internet.</p>
+    </div>
+
+    <div class="recurso">
+        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d">
+        <p><b>Videos educativos:</b> Son contenidos audiovisuales diseñados para explicar temas de forma clara y dinámica. Facilitan el aprendizaje visual y auditivo, permitiendo comprender mejor conceptos complejos.</p>
+    </div>
+
+    <div class="recurso">
+        <img src="https://i.blogs.es/f7bdbf/111d5bbf-17e6-474d-8784-bd0a13bb3b10/450_1000.jpeg">
+        <p><b>Aplicaciones educativas:</b> Son aplicaciones creadas para apoyar el aprendizaje mediante ejercicios interactivos, juegos y actividades didácticas, permitiendo aprender de forma autónoma.</p>
+    </div>
+
+    <div class="recurso">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
+        <p><b>Libros digitales:</b> Son versiones electrónicas de libros que se pueden leer en dispositivos como computadoras, tabletas o celulares, facilitando el acceso a la información.</p>
+    </div>
+
+    <div class="recurso">
+        <img src="https://www.educaenvivo.com/wp-content/uploads/2023/10/Ruleta-de-los-colores.webp">
+        <p><b>Juegos educativos:</b> Son herramientas digitales que combinan entretenimiento y aprendizaje, ayudando a desarrollar habilidades cognitivas y reforzar conocimientos.</p>
+    </div>
+
+    <div class="recurso">
+        <img src="https://newzenda.com/wp-content/uploads/2024/10/simulador1-768x463.jpg">
+        <p><b>Simuladores:</b> Son programas que recrean situaciones reales en un entorno virtual, permitiendo experimentar y aprender sin riesgos.</p>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+</footer>
+
+</body>
+</html>
